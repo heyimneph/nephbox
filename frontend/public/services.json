@@ -1,0 +1,102 @@
+{
+  "customBots": [
+    {
+      "label": "Basic",
+      "price": "£10",
+      "desc": "Basic Functionality: Moderation, Customisation, Simple Commands etc...",
+      "buttonLabel": "Contact",
+      "buttonLink": "https://discord.gg/u6GqqWxqRN"
+    },
+    {
+      "label": "Intermediate",
+      "price": "£25",
+      "desc": "Intermediate Functionality: Scraping, Simple Games, Welcome Messages etc...",
+      "buttonLabel": "Contact",
+      "buttonLink": "https://discord.gg/u6GqqWxqRN"
+    },
+    {
+      "label": "Advanced",
+      "price": "£50",
+      "desc": "Advanced Functionality: Customisable Economy, Shops, Music Player etc...",
+      "buttonLabel": "Contact",
+      "buttonLink": "https://discord.gg/u6GqqWxqRN"
+    },
+    {
+      "label": "Advanced +",
+      "price": "£99+",
+      "desc": "Complex Ideas that require further discussion. You can contact via Discord or email.",
+      "buttonLabel": "Contact",
+      "buttonLink": "https://discord.gg/u6GqqWxqRN"
+    }
+  ],
+
+  "modules": [
+    {
+      "label": "BOT Template",
+      "price": "£10",
+      "desc": "A template for a bot that is easy to use and ready for customization.",
+      "fullDesc": "**What you get:**\n- Step-by-step IDE setup instructions\n- Clean, well-documented codebase\n\nPerfect for beginners looking for a quick starting point!",
+      "buttonLabel": "Purchase",
+      "productId": "template.zip",
+      "fileDisplayName": "template.zip"
+    },
+    {
+      "label": "Welcome Messages",
+      "price": "£10",
+      "desc": "A Cog for fully customisable Welcome Messages. Drag and Drop into the template.",
+      "fullDesc": "**Features:**\n- Supports text and image welcomes\n- Easily configurable via JSON\n- Use in any bot based on the template\n\nJust drop this cog into your bot and set your welcome style in minutes!",
+      "buttonLabel": "Purchase",
+      "productId": "welcome.zip",
+      "fileDisplayName": "welcome.zip"
+    },
+    {
+      "label": "Game Bundle",
+      "price": "£20",
+      "desc": "Three simple games for your community to play with eachother!",
+      "fullDesc": "**Included Games:**\n- TicTacToe\n- Rock Paper Scissors\n- Hangman\n\n**Commands:**\n- `/rps`\n- `/ttt`\n- `/hangman`\n\nAll games are easy to use and integrate with your existing bot. Any future 'small' games will be added to this bundle for no extra charge.",
+      "buttonLabel": "Purchase",
+      "productId": "games.zip",
+      "fileDisplayName": "games.zip"
+    },
+    {
+      "label": "Message Filter",
+      "price": "£70",
+      "desc": "Advanced message filter OpenAIs moderation API. You will need your own API key",
+      "fullDesc": "**Features:**\n- Uses [Moderation](https://platform.openai.com/docs/guides/moderation) for detection\n- Multiple customizable trigger levels\n- Simple config for your community's needs\n\nKeep your server clean with cutting-edge AI filtering.",
+      "buttonLabel": "Purchase",
+      "productId": "filter.py",
+      "fileDisplayName": "filter.py"
+    }
+  ],
+
+  "gameServers": [
+    {
+      "label": "Bronze",
+      "price": "£10/mo",
+      "desc": "2GB, 4 Core @ 2.9GHz, instant setup.",
+      "buttonLabel": "Purchase",
+      "productId": "Bronze"
+    },
+    {
+      "label": "Silver",
+      "price": "£18/mo",
+      "desc": "4GB, 4 Core @ 2.9GHz, backups included.",
+      "buttonLabel": "Purchase",
+      "productId": "Silver"
+    },
+    {
+      "label": "Gold",
+      "price": "£37/mo",
+      "desc": "8GB, 6 Core @ 2.9GHz, mod support.",
+      "buttonLabel": "Purchase",
+      "productId": "Gold"
+    },
+    {
+      "label": "Platinum",
+      "price": "£99/mo",
+      "desc": "No caps, priority support, custom configs.",
+      "buttonLabel": "Purchase",
+      "productId": "Platinum"
+    }
+  ]
+}

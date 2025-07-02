@@ -1,0 +1,8 @@
+.title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 2.5rem 0;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--text-light);
+}

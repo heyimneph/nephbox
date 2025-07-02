@@ -1,0 +1,267 @@
+.pageContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.sectionHeader {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 2.5rem 0 1.2rem 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sectionDesc {
+    color: var(--text-secondary);
+    font-size: 1.08rem;
+    margin-bottom: 1.7rem;
+    margin-top: -0.7rem;
+    max-width: 800px;
+    line-height: 1.6;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* === HorizontalScroller CSS === */
+.scrollerRoot {
+    margin-bottom: 2.5rem;
+}
+
+.listWrapper {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+}
+
+.cardList {
+    display: flex;
+    gap: 1.7rem;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.cardList::-webkit-scrollbar {
+    display: none;
+}
+
+.cardItem {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+}
+
+/* === Service Card Styles === */
+.carouselCard {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(30,24,64,0.11);
+    padding: 2rem 1.2rem 1.4rem 1.2rem;
+    min-width: 220px;
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid var(--border-color);
+    transition: transform 0.19s, box-shadow 0.19s;
+}
+
+.cardTitle {
+    font-size: 1.17rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+
+.price {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.desc {
+    font-size: 0.98rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.purchaseBtnWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.purchaseBtn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.3rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.17s;
+    box-shadow: 0 2px 8px rgba(30,24,64,0.06);
+    text-decoration: none;
+    text-align: center;
+}
+
+.purchaseBtn:hover {
+    background: var(--accent);
+}
+
+/* === Arrows === */
+.scrollBtn {
+    position: absolute;
+    top: 42%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: color 0.18s, opacity 0.16s;
+    padding: 0.1rem 0.6rem;
+    color: var(--primary-color);
+}
+
+.scrollBtn.left {
+    left: -10px;
+}
+
+.scrollBtn.right {
+    right: -10px;
+}
+
+.scrollBtn:disabled {
+    color: var(--border-color);
+    opacity: 0.5;
+    cursor: default;
+}
+
+.readMore {
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 4px;
+    text-decoration: underline;
+}
+
+/* --- FULL DESCRIPTION OVERLAY STYLES --- */
+
+.fullDescLinkWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.fullDescLink {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.98rem;
+}
+
+
+.fullDescOverlay {
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    background: rgba(10,10,15,0.62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullDescBox {
+    background: var(--bg-secondary);
+    color: var(--text-light);
+    padding: 2.2rem 1.5rem 1.4rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(30,24,64,0.20);
+    max-width: 430px;
+    width: 90vw;
+    position: relative;
+    font-size: 1rem;
+    animation: fadeInScale 0.22s;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.desc {
+    font-size: 0.98rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.fullDescMarkdown {
+    font-size: 0.98rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+    min-height: 48px;
+    display: block;
+    text-align: left;
+}
+
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.98) translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.closeBtn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+    transition: color 0.13s;
+}
+
+.closeBtn:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 700px) {
+    .cardList {
+        gap: 1rem;
+    }
+    .scrollBtn {
+        display: none !important;
+    }
+}

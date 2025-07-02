@@ -1,0 +1,25 @@
+.backToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    min-width: 3.5rem;
+    height: 2.5rem;
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+    transition: opacity 0.2s, transform 0.2s;
+    opacity: 0.7;
+}
+
+.backToTop:hover {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.04);
+}

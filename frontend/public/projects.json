@@ -1,0 +1,113 @@
+[
+  {
+    "title": "Yu-Gi-Oh! Deck Tool",
+    "description": "Estimate deck prices using .ydk files or search. Includes full card images, pricing, and analysis tools.",
+    "tech": ["React", "Flask","API"],
+    "links": [
+      {
+        "icon": "🧩",
+        "label": "Open App",
+        "url": "/webapps/deck-price-lookup"
+      }
+    ]
+  },
+  {
+    "title": "File Converter Tool",
+    "description": "Convert documents and audio files to other formats like PDF or MP3. Built with Flask and React.",
+    "tech": ["React", "Flask", "pydub", "pdfkit"],
+    "links": [
+      {
+        "icon": "🧩",
+        "label": "Open App",
+        "url": "/webapps/file-converter"
+      }
+    ]
+  },
+  {
+    "title": "URL Shortener",
+    "description": "Shorten long URLs into clean, shareable links. Lightweight, fast, and simple with analytics-ready support.",
+    "tech": ["React", "Flask", "SQLite", "Base62"],
+    "links": [
+      {
+        "icon": "🧩",
+        "label": "Open App",
+        "url": "/webapps/url-shortener"
+      }
+    ]
+  },
+  {
+    "title": "JSON Formatter",
+    "description": "Format and validate JSON instantly with error checking and pretty print support for quick debugging.",
+    "tech": ["React"],
+    "links": [
+      {
+        "icon": "🧩",
+        "label": "Open App",
+        "url": "/webapps/json-formatter"
+      }
+    ]
+  },
+  {
+    "title": "Markdown Previewer",
+    "description": "Write Markdown and preview formatted output in real time. Ideal for blogging, docs, and quick edits.",
+    "tech": ["React", "Marked.js"],
+    "links": [
+      {
+        "icon": "🧩",
+        "label": "Open App",
+        "url": "/webapps/markdown-previewer"
+      }
+    ]
+  },
+  {
+    "title": "Misu - Discord Bot",
+    "description": "Card-focused Discord bot with trading logic, slash commands, and image generation built in Python.",
+    "tech": ["Python", "Discord.py", "Flask", "HTML/CSS", "aiosqlite"],
+    "links": [
+      {
+        "icon": "📄",
+        "label": "Invite",
+        "url": "https://discord.com/oauth2/authorize?client_id=1268589797149118670&scope=bot+applications.commands&permissions=93184"
+      },
+      {
+        "icon": "🌐",
+        "label": "Dashboard",
+        "url": "https://misu.nephbox.net"
+      },
+      {
+        "icon": "🔗",
+        "label": "GitHub",
+        "url": "https://github.com/lukenorton/misu"
+      }
+    ]
+  },
+  {
+    "title": "Skynet - Discord Bot",
+    "description": "Blocks hate speech and malicious links using OpenAI and VirusTotal. Built for secure Discord servers.",
+    "tech": ["Python", "Docker", "OpenAI", "VirusTotal", "aiosqlite"],
+    "links": [
+      {
+        "icon": "🔗",
+        "label": "GitHub",
+        "url": "https://github.com/heyimneph/Skynet"
+      }
+    ]
+  },
+  {
+    "title": "Jeb - Discord Bot",
+    "description": "Play music from YouTube with queue controls and interactive embeds. Powered by ffmpeg and Python.",
+    "tech": ["Python", "Docker", "ffmpeg", "Pillow", "aiosqlite"],
+    "links": [
+      {
+        "icon": "📄",
+        "label": "Invite",
+        "url": "https://discord.com/oauth2/authorize?client_id=1228463338200105031&permissions=294242086400&integration_type=0&scope=bot"
+      },
+      {
+        "icon": "🔗",
+        "label": "GitHub",
+        "url": "https://github.com/heyimneph/Skynet"
+      }
+    ]
+  }
+]

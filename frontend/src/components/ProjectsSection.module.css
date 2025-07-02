@@ -1,0 +1,206 @@
+.projects-section {
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: var(--bg-secondary);
+    padding: 80px 20px;
+}
+
+.projects-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: visible;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-light);
+}
+
+/* --- Carousel Outer: for absolute arrows --- */
+.carousel-outer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Absolute Arrows, outside scroll area --- */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 7px;
+    transition: color 0.18s, opacity 0.15s, box-shadow 0.16s, background 0.17s;
+}
+
+.carousel-arrow.left {
+    left: -16px;
+}
+.carousel-arrow.right {
+    right: -16px;
+}
+
+.carousel-arrow:focus,
+.carousel-arrow:active {
+    background: rgba(142, 99, 243, 0.16);
+    outline: 2px solid var(--primary-color);
+    box-shadow: 0 0 0 1.5px var(--primary-color);
+}
+
+@media (max-width: 600px) {
+    .carousel-arrow {
+        display: none !important;
+    }
+}
+
+/* --- Carousel (scroll area): exactly 3 cards + 2 gaps on desktop --- */
+.projects-list {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    overflow-y: visible;
+    width: 1084px;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+    scroll-padding-left: 0;
+    scroll-padding-right: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    position: relative;
+    z-index: 1;
+    scroll-snap-type: x mandatory;
+}
+
+.projects-list::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .projects-list {
+        width: 724px;      /* 340*2 + 32 = 724px (2 cards, 1 gap) */
+    }
+}
+@media (max-width: 800px) {
+    .projects-list {
+        width: 340px;      /* 1 card */
+    }
+}
+
+.project-card {
+    flex: 0 0 auto;
+    background-color: var(--bg-dark);
+    padding: 2.2rem 1.4rem 1.7rem 1.4rem;
+    padding-inline: 1rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease, z-index 0s;
+    border: 1.5px solid var(--border-color);
+    min-width: 340px;
+    max-width: 340px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    position: relative;
+    z-index: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    z-index: 2;
+}
+
+.project-card h3 {
+    font-size: 1.45rem;
+    margin-bottom: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-align: center;
+}
+
+.project-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.8rem;
+    justify-content: center;
+    margin-bottom: 1.3rem;
+    margin-top: 0.4rem;
+}
+
+.tech-badge {
+    background-color: rgba(142, 99, 243, 0.13);
+    color: var(--primary-color);
+    border-radius: 999px;
+    padding: 0.43em 1.1em;
+    font-size: 0.98em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(142, 99, 243, 0.19);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.tech-badge:hover {
+    background-color: rgba(142, 99, 243, 0.21);
+    transform: translateY(-2px);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 0.4rem 0.9rem;
+    border-radius: 7px;
+    background-color: rgba(142, 99, 243, 0.14);
+    transition: all 0.18s;
+    font-size: 0.98rem;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+}
+
+.project-link:hover {
+    background-color: rgba(142, 99, 243, 0.22);
+    transform: translateY(-1px);
+}
+
+.project-link span {
+    font-size: 1em;
+}

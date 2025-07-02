@@ -1,0 +1,104 @@
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.dropZone {
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.input {
+    width: 100%;
+    min-height: 180px;
+    font-family: monospace;
+    font-size: 0.95rem;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    resize: vertical;
+}
+
+.controls,
+.actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.primary:hover {
+    background: var(--accent);
+}
+
+.secondary {
+    background: #444;
+    color: white;
+}
+
+.secondary:hover {
+    background: #666;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.error {
+    color: #ff4c4c;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.success {
+    color: #3fc76a;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+
+.validation {
+    background: #2e2e2e;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    color: #f8dada;
+    font-size: 0.95rem;
+}
+
+.validation ul {
+    padding-left: 1.2rem;
+}
+
+.output {
+    background: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    font-size: 0.95rem;
+}

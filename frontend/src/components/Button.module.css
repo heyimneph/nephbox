@@ -1,0 +1,33 @@
+.button {
+    font-weight: 600;
+    padding: 0.2rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+    border: none;
+    min-width: 120px;
+    text-align: center;
+}
+
+.button:active {
+    transform: scale(0.97);
+}
+
+.primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.primary:hover {
+    background: var(--accent);
+}
+
+.secondary {
+    background: #444;
+    color: white;
+}
+
+.secondary:hover {
+    background: #666;
+}

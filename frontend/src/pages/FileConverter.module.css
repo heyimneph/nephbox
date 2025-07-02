@@ -1,0 +1,202 @@
+.main {
+    padding: 80px 20px 40px 20px;
+    background-color: var(--bg-dark);
+    min-height: 100vh;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 2.5rem 0 2.5rem 0;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.subtext {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+input[type="file"],
+select,
+button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: var(--accent);
+}
+
+label {
+    color: var(--text-light);
+    text-align: left;
+    font-weight: 500;
+}
+
+.error {
+    color: #ff4c4c;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+a {
+    color: var(--primary-color);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.uploadBox {
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--bg-dark);
+}
+
+.uploadLabel {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.uploadLabel:hover {
+    background-color: var(--accent);
+}
+
+.fileInput {
+    display: none;
+}
+
+.disclaimer {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.featureGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 3rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.featureCard {
+    background-color: var(--bg-dark);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    min-width: 300px;
+    max-width: 360px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.featureCard h3 {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.featureCard p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.clearButton {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.clearButton:hover {
+    color: var(--primary-color);
+}
+
+.outputSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.downloadButton {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.downloadButton:hover {
+    background-color: var(--accent);
+}
+
+

@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Misu - Discord Bot",
+    "description": "A Discord card bot built with Python and Discord.py, featuring image generation, slash commands, and trading logic.",
+    "tech": ["Python", "Discord.py", "Flask", "HTML/CSS", "aiosqlite"],
+    "links": [
+      {
+        "icon": "\uD83D\uDCC4",
+        "label": "Invite",
+        "url": "https://discord.com/oauth2/authorize?client_id=1268589797149118670&scope=bot+applications.commands&permissions=93184"
+      },
+
+      {
+        "icon": "\uD83C\uDF10",
+        "label": "Dashboard",
+        "url": "https://misu.nephbox.net"
+      },
+
+      {
+        "icon": "\uD83D\uDD17" ,
+        "label": "GitHub",
+        "url": "https://github.com/lukenorton/misu"
+      }
+    ]
+  },
+  {
+    "title": "Skynet - Discord Bot",
+    "description": "A Discord bot which makes use of OpenAI and VirusTotal to block hateful speech and malicious links.",
+    "tech": ["Python", "Docker", "OpenAI", "VirusTotal", "aiosqlite"],
+    "links": [
+      {
+        "icon": "\uD83D\uDD17" ,
+        "label": "GitHub",
+        "url": "https://github.com/heyimneph/Skynet"
+      }
+    ]
+  },
+  {
+    "title": "Jeb - Discord Bot",
+    "description": "A Discord bot capable of playing music from youtube with a full interactive player interfact",
+    "tech": ["Python", "Docker", "ffmpeg", "Pillow", "aiosqlite"],
+    "links": [
+      {
+        "icon": "\uD83D\uDCC4",
+        "label": "Invite",
+        "url": "https://discord.com/oauth2/authorize?client_id=1228463338200105031&permissions=294242086400&integration_type=0&scope=bot"
+      },
+      {
+        "icon": "\uD83D\uDD17" ,
+        "label": "GitHub",
+        "url": "https://github.com/heyimneph/Skynet"
+      },
+    {
+      "title": "Yugioh - Deck Price Check",
+      "description": "A Discord bot capable of playing music from youtube with a full interactive player interfact",
+      "tech": ["Python", "Docker", "ffmpeg", "Pillow", "aiosqlite"],
+      "links": [
+        {
+          "icon": "\uD83D\uDCC4",
+          "label": "Invite",
+          "url": "https://discord.com/oauth2/authorize?client_id=1228463338200105031&permissions=294242086400&integration_type=0&scope=bot"
+        },
+        {
+          "icon": "\uD83D\uDD17" ,
+          "label": "GitHub",
+          "url": "https://github.com/heyimneph/Skynet"
+        }
+    ]
+  }
+]
+

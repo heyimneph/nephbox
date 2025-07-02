@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.toolbar {
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+
+.toolbarButton {
+    background: var(--bg-secondary);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.98rem;
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.toolbarButton:hover,
+.toolbarButton:focus {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.input {
+    width: 100%;
+    min-height: 220px;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.optionsRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+}
+.optionLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.optionText {
+    font-size: 0.92rem;
+}
+
+.preview {
+    min-height: 260px;
+    background: var(--bg-secondary);
+    color: var(--text-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    overflow: auto;
+    margin-bottom: 0.7rem;
+}
+
+.error {
+    color: #ff4c4c;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/* Responsive layout: stack vertically on small screens */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .leftPane, .previewWrapper {
+        min-width: 0;
+    }
+}

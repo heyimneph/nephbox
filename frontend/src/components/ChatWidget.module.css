@@ -1,0 +1,148 @@
+.chatButton {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 9999;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 24px;
+    padding: 0.75em 2.2em;
+    font-weight: 600;
+    font-size: 1.08rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background 0.2s, bottom 0.25s ease;
+}
+
+.chatWindow {
+    position: fixed;
+    background: var(--bg-secondary);
+    color: var(--text-light);
+    border-radius: 14px;
+    z-index: 10009;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    user-select: auto;
+    transition: bottom 0.25s ease, box-shadow 0.12s, height 0.18s cubic-bezier(.42,0,.58,1);
+}
+
+.header {
+    padding: 0.95rem 1.1rem;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    height: 56px;
+    min-height: 56px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header:active {
+    cursor: grabbing;
+}
+
+.headerCenter {
+    flex: 1;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.02em;
+    pointer-events: none;
+    user-select: none;
+}
+
+.headerBtn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.18rem;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disabledBanner {
+    background: #ff5555;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #c02b2b;
+    letter-spacing: 0.01em;
+}
+
+.messages {
+    flex: 1;
+    padding: 1rem;
+    background: var(--bg-dark);
+    font-size: 0.99rem;
+    overflow-y: auto;
+    transition: opacity 0.15s;
+}
+
+.messageRow {
+    margin: 0.5rem 0;
+}
+
+.messageBot {
+    text-align: left;
+}
+
+.messageUser {
+    text-align: right;
+}
+
+.inputRow {
+    display: flex;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+
+.inputBox {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    background: var(--bg-secondary);
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.sendBtn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0 1.2em;
+    font-weight: 600;
+    transition: opacity 0.12s;
+    cursor: pointer;
+}
+
+.sendBtn:disabled,
+.inputBox:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.resizeHandle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 2px;
+    bottom: 2px;
+    cursor: nwse-resize;
+    z-index: 10019;
+    background: transparent;
+    user-select: none;
+}

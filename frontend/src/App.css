@@ -1,0 +1,146 @@
+/* ==========================================================================
+   1. RESET & BASE
+   ========================================================================== */
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings */
+html, body, h1, h2, h3, h4, h5, h6, p, figure,
+blockquote, dl, dd, ul, ol, pre, table {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol */
+ul, ol {
+  list-style: none;
+}
+
+/* Layout baseline for sticky footer and full-width sections */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ✅ Prevent horizontal scroll from full-width sections */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Make images and media responsive by default */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Anchor defaults */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Button defaults */
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Form elements */
+input, textarea, select {
+  font: inherit;
+}
+
+/* ==========================================================================
+   2. CSS VARIABLES & THEME SWITCHING
+   ========================================================================== */
+
+:root {
+  --bg-dark:       #121212;
+  --bg-secondary:  #1e1e1e;
+  --text-light:    #eeeeee;
+  --text-secondary:#bbbbbb;
+  --primary-color: #8e63f3;
+  --accent:        #7a53e0;
+  --border-color:  #333333;
+
+  --font-sans: 'Poppins', sans-serif;
+  --transition-default: 0.3s ease;
+}
+
+[data-theme='light'] {
+  --bg-dark:       #ffffff;
+  --bg-secondary:  #f5f5f5;
+  --text-light:    #222222;
+  --text-secondary:#555555;
+  --primary-color: #8e63f3;
+  --accent:        #7a53e0;
+  --border-color:  #dddddd;
+}
+
+/* ==========================================================================
+   3. GLOBAL UTILITIES
+   ========================================================================== */
+
+/* Visually hidden (for accessibility) */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Container constraint */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+/* Smooth focus outlines */
+:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
